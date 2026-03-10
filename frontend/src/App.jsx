@@ -4,6 +4,8 @@ import './App.css';
 
 const api = axios.create({ baseURL: import.meta.env.VITE_API_BASE_URL });
 
+
+
 export default function App() {
   const [employees, setEmployees] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
@@ -87,6 +89,7 @@ export default function App() {
       </table>
 
       <hr></hr>
+
 
       <h2>{isEditing ? "Update Employee" : "Add New Employee"}</h2> 
 
